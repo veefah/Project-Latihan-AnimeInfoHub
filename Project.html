@@ -12,7 +12,6 @@
 		<p>Website sederhana berisi informasi dan rekomendasi anime</p>
 
 		<nav>
-			<h2>Menu</h2>
 			<ul>
 				<li><a href="#menu">Menu</a></li>
 				<li><a href="#popular">Popular Anime</a></li>
@@ -133,12 +132,94 @@
 
 <section id="gallery">
 	<h2>Gallery</h2>
+	<!--TAMBAHIN figure-->
+	<h3>Naruto</h3>
+		<img src="image/Narutoshippuden.jpeg" alt="naruto dan para karakter di shippuden" width="200">
+		<img src="image/Rikudousennin.jpeg" alt="Naruto dan Sasuke bertemu dengan Rikudou sennin" width="200">
+		<img src="image/kaguya.jpeg" alt="Para shinobi melawan musuh terkuat Kaguya" width="200">
+	
+	<h3>Kimetsu no Yaiba</h3>
+		<img src="image/Tanjiro.jpeg" alt="Kamado Tanjiro" width="200">
+		<img src="image/Hashira.jpeg" alt="Para Hasira" width="200">
+		<img src="image/MuzanUbuyashiki.jpeg" alt="Muzan dan Ubuyashiki" width="200">
+
+	<h3>Jujutsu Kaisen</h3>
+		<img src="image/YujiGojo.jpeg" alt="Yuji dan gojo" width="200">
+		<img src="image/Jujutsu.jpeg" alt="Gojo, Megumi, Nobara, Itadori dengan kilat hitamnya" width="200">
+		<img src="image/Jujutsukaisen.jpeg" alt="gojo, nanami, nobara, itadori, megumi" width="200">
+
+	<h3>Kuroshitsuji</h3>
+		<img src="image/Ciel.jpeg" alt="Ciel dan Sebastian" width="200">
+		<img src="image/Sebastian.jpeg" alt="Ciel bersama Sebastian dan Lizzy" width="200">
+		<img src="image/Blackbutler.jpeg" alt="Ciel, Sebastian, Finny, Meyrin, Brdroy" width="200">
+
+	<h3>Spy x Family</h3>
+		<img src="image/Forger.jpeg" alt="Keluarga forger" width="200">
+		<img src="image/Loid.jpeg" alt="Loid sedang menjalankan misi" width="200">
+		<img src="image/yorbriar.jpeg" alt="Yor briar sedang menjalankan misi" width="200">
+
+		
 </section>
 
 <section id="contact">
-</section>
-</main>
+	<form action="" method="GET">
 
+	<fieldset>
+		<legend><strong>Feedback / Kritik & Saran</strong></legend>
+	
+		<label for="nama">Nama :<br>
+		<input type="text" id="nama" name="nama">			
+		</label>
+		<br>
+		<label for="email">Email :<br>
+		<input type="email" id="email" name="email">
+		</label><br>
+
+		<label for="text">Feedback</label>
+		<br>
+		<textarea id="text" name="feedback"></textarea>
+
+		<fieldset>
+		<legend> Anime Terfavorit</legend>
+		<input type="radio" id="naruto" name="anime" value="naruto">
+		<label for="naruto">Naruto</label>
+
+		<input type="radio" id="kimetsu" name="anime" value="kimetsu">
+		<label for="kimetsu">Kimetsu no Yaiba</label>
+
+		<input type="radio" id="jujutsu" name="anime" value="jujutsu">
+		<label for="jujutsu">Jujutsu Kaisen</label>
+
+		<input type="radio" id="kuroshitsuji" name="anime" value="kuroshitsuji">
+		<label for="kuroshitsuji">Kuroshitsuji</label>
+
+		<input type="radio" id="spy" name="anime" value="spyxfamily">
+		<label for="spy">Spy x Family</label>
+	</fieldset>
+		<br>
+
+	<fieldset>
+		<legend>Genre Favorit</legend><br>
+
+		<input type="checkbox" id="action" name="genre" value="action">
+		<label for="action">Action</label>
+
+		<input type="checkbox" id="fantasi" name="genre" value="fantasi">
+		<label for="fantasi">Fantasi</label>
+
+		<input type="checkbox" id="romance" name="genre" value="romance">
+		<label for="romance">Romance</label>	
+
+	</fieldset>
+	<br>
+	<button type="submit">Kirim</button>
+
+   </fieldset>
+	</form>
+</section>
+
+</main>
+<footer><p>&copy Anime Info hub 2026</p></footer>
 
 </body>
 </html>
