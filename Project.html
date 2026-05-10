@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="web sederhana berisi tentang informasi dan rekomendasi anime">
+	<link rel="stylesheet" type="text/css" href="Project.css">
 	<title>ANIME INFO HUB</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
 <main>	
 <section id="popular">
 	<h2>Popular Anime</h2>
-		<article>
+		<article class="card">
 			<h3>Naruto the Movie & Naruto Shippuden</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -34,7 +35,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 
-		<article>
+		<article class="card">
 			<h3>Kimetsu no Yaiba</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -44,7 +45,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 
-		<article>
+		<article class="card">
 			<h3>Jujutsu Kaisen</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -54,7 +55,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 
-		<article>
+		<article class="card">
 			<h3>Kuroshitsuji</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -64,7 +65,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 
-		<article>
+		<article class="card">
 			<h3>Spy x Family</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -140,7 +141,7 @@
 	
 	<h3>Kimetsu no Yaiba</h3>
 		<img src="image/Tanjiro.jpeg" alt="Kamado Tanjiro" width="200">
-		<img src="image/Hashira.jpeg" alt="Para Hasira" width="200">
+		<img src="image/Hashira.jpeg" alt="Para Hashira" width="200">
 		<img src="image/MuzanUbuyashiki.jpeg" alt="Muzan dan Ubuyashiki" width="200">
 
 	<h3>Jujutsu Kaisen</h3>
@@ -164,9 +165,10 @@
 <section id="contact">
 	<form action="" method="GET">
 
-	<fieldset>
+	<fieldset id="kotak">
 		<legend><strong>Feedback / Kritik & Saran</strong></legend>
-	
+		
+	<div>
 		<label for="nama">Nama :<br>
 		<input type="text" id="nama" name="nama">			
 		</label>
@@ -174,13 +176,14 @@
 		<label for="email">Email :<br>
 		<input type="email" id="email" name="email">
 		</label><br>
+	</div>
 
 		<label for="text">Feedback</label>
 		<br>
 		<textarea id="text" name="feedback"></textarea>
 
-		<fieldset>
-		<legend> Anime Terfavorit</legend>
+		<div>
+		<p> Anime Terfavorit</p>
 		<input type="radio" id="naruto" name="anime" value="naruto">
 		<label for="naruto">Naruto</label>
 
@@ -195,11 +198,11 @@
 
 		<input type="radio" id="spy" name="anime" value="spyxfamily">
 		<label for="spy">Spy x Family</label>
-	</fieldset>
+	</div>
 		<br>
 
-	<fieldset>
-		<legend>Genre Favorit</legend><br>
+	<div>
+		<p>Genre Favorit</p>
 
 		<input type="checkbox" id="action" name="genre" value="action">
 		<label for="action">Action</label>
@@ -210,7 +213,7 @@
 		<input type="checkbox" id="romance" name="genre" value="romance">
 		<label for="romance">Romance</label>	
 
-	</fieldset>
+	</div>
 	<br>
 	<button type="submit">Kirim</button>
 
@@ -219,7 +222,7 @@
 </section>
 
 </main>
-<footer><p>&copy Anime Info hub 2026</p></footer>
+<footer><p>&copy; Anime Info hub 2026</p></footer>
 
 </body>
 </html>
