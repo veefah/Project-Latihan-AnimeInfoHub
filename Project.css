@@ -1,0 +1,54 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background-color: steelblue;
+}
+
+header p {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  color:  white;
+  text-align: center;
+}
+
+h2 {
+  color: yellowgreen;
+}
+
+h3 {
+  color: cyan;
+}
+
+a {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:hover {
+  color: cyan;
+}
+
+.card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#kotak {
+  background-color: skyblue;
+}
+
+form {
+  color: black;
+}
+
