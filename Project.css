@@ -9,6 +9,8 @@ body {
 header {
   background-color: steelblue;
   padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 header p {
@@ -17,10 +19,12 @@ header p {
   font-weight: bold;
   font-style: italic;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 h1 {
   color:  white;
+  margin: 100px;
   text-align: center;
 }
 
@@ -30,6 +34,24 @@ h2 {
 
 h3 {
   color: cyan;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 20px;
 }
 
 main {
@@ -50,10 +72,35 @@ a:hover {
 .card {
   background-color: #1e1e1e;
   color: white;
-  width: auto;
+  width: 280px;
   margin: 20px;
-  padding: 10px 20px;
- }
+  padding: 20px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card-characters {
+  width: 250px;
+  display: inline-block;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  vertical-align: top;
+}
+ 
+.card-characters img {
+  border-radius: 25px;
+  width: 200px;
+}
+
+#gallery img {
+  display: inline-block;
+  padding: 30px;
+  left: 20px;
+}
 
 #kotak {
   background-color: skyblue;
