@@ -24,8 +24,10 @@ header p {
 
 h1 {
   color:  white;
-  margin: 100px;
+  margin: 40px 0;
+  margin-bottom: 20px;
   text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -49,6 +51,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 main {
@@ -60,19 +63,13 @@ main {
 a {
   text-decoration: none;
   color: yellow;
+  padding: 8px 12px;
 }
 
 a:hover {
   color: cyan;
-}
-
-.card {
-  background-color: #1e1e1e;
-  color: white;
-  width: 45%;
-  padding: 20px;
-  border: 1px solid cyan;
-  border-radius: 20px;
+  box-shadow: 0 5px 5px;
+  transition: 0.3s;
 }
 
 .popular-container {
@@ -82,21 +79,34 @@ a:hover {
   justify-content: space-between;
 }
 
+.card {
+  background-color: #1e1e1e;
+  color: white;
+  width: 45%;
+  padding: 20px;
+  border: 1px solid cyan;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+}
+
 .card-content {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .card-content img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   border-radius: 15px;
-  width: 100px;
+  flex-shrink: 0;
 }
 
-.card-characters {
-  border: 1px solid cyan;
-  border-radius: 20px;
-  padding: 20px;
-  width: 100%;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4);
+  transition: 0.3s;
 }
 
 .characters-container{
@@ -104,17 +114,32 @@ a:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
+
+.card-characters {
+  border: 1px solid cyan;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+}
+
+.card-characters:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
+}
  
+.card-characters img {
+  border-radius: 25px;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+}
+
 figure {
   display: flex;
   gap: 20px;
   align-items: center;
  
-}
-
-.card-characters img {
-  border-radius: 25px;
-  width: 150px;
 }
 
 .gallery-container {
@@ -128,18 +153,25 @@ figure {
   border-radius: 15px;
 }
 
+.gallery-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 5px cyan;
+}
+
 .gallery-group {
     margin-top: 40px;
 }
 
 #kotak {
-  background-color: antiquewhite;
+  background-color: black;
   border-radius: 15px;
+  border: 1px solid black;
   padding: 20px;
+  box-shadow: 0 0 5px cyan;
 }
 
 form {
-  color: black;
+  color: cyan;
   margin-top: 50px;
 }
 
@@ -147,7 +179,14 @@ input,
 textarea,
 button {
   margin-top: 10px;
+  background-color: skyblue;
 }
+
+button:hover {
+    background-color: deepskyblue;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 
 footer {
   text-align: center;
