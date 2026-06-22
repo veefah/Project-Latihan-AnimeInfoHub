@@ -1,3 +1,7 @@
+* {
+box-sizing: border-box;
+}
+
 body {
   background-color: #121212;
   color: #e0e0e0;
@@ -39,23 +43,31 @@ h3 {
 }
 
 nav {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #111;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 20px;
+  padding-right: 20px;
+  color: #43F7F7;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: auto;
   padding: 20px;
 }
@@ -64,49 +76,54 @@ a {
   text-decoration: none;
   color: yellow;
   padding: 8px 12px;
+  transition: 0.3s;
 }
 
 a:hover {
   color: cyan;
   box-shadow: 0 5px 5px;
-  transition: 0.3s;
 }
 
 .popular-container {
   display: flex;
-  gap: 15px;
+  gap: 5px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .card {
   background-color: #1e1e1e;
   color: white;
-  width: 45%;
-  padding: 20px;
+  flex-basis: 250px;
   border: 1px solid cyan;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
-}
-
-.card-content {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  transition: 0.3s;
 }
 
 .card-content img {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 150px;
   object-fit: cover;
-  border-radius: 15px;
+  padding: 5px;
   flex-shrink: 0;
+}
+
+.card-content p {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.card h3 {
+  text-align: center;
+  min-height: 60px;
+
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4);
-  transition: 0.3s;
+  
 }
 
 .characters-container{
@@ -116,30 +133,36 @@ a:hover {
 }
 
 .card-characters {
+  display: flex;
   border: 1px solid cyan;
-  border-radius: 20px;
-  padding: 20px;
+  border-radius: 10px;
+
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
 }
 
-.card-characters:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
-}
- 
 .card-characters img {
-  border-radius: 25px;
-  width: 180px;
-  height: 220px;
+  border-radius: 5px;
+  width: 200px;
+  height: 260px;
   object-fit: cover;
+  flex-shrink: 0;
+}
+
+.characters-info {
+  margin-left: 20px;
 }
 
 figure {
   display: flex;
   gap: 20px;
-  align-items: center;
- 
+  justify-content: space-between;
+  margin: 0;
+}
+
+.card-characters:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.4);
 }
 
 .gallery-container {
